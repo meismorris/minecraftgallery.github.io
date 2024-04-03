@@ -1,0 +1,160 @@
+* {
+    font-family: "Manrope";
+    background-color: #FAF9F6;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.top-bar .main-text {
+    color: #333;
+    font-size: 40px;
+    font-family: "Manrope";
+}
+
+.top-bar .secondary-text {
+    color: #666;
+    font-size: 40px;
+    font-family: "Manrope";
+}
+
+.top-bar {
+    background-color: #FAF9F6;
+    color: #333;
+    padding: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding-left: 65px;
+
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding-top: 140px;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    background-color: #FAF9F6;
+    top: calc(70px + 70px);
+    left: 0;
+    z-index: 1;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+    padding-top: 80px;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    font-size: 25px;
+    padding-left: 50px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #007bff;
+}
+
+.image-gallery {
+    overflow: hidden;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+
+}
+
+.navigation button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.textbox {
+    max-width: 800px;
+    margin-right: 20px;
+    font-size: 20px;
+    padding-top: 100px;
+
+}
+
+.textbox h2 {
+    font-size: 24px;
+    font-size: 40px;
+}
+
+
+.image img {
+    margin-top: 100px;
+    padding-top: 1px;
+    max-width: 300px;
+    height: auto;
+}

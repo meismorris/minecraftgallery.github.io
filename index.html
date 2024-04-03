@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="whale.png">
+    <title>Minecraft Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<div class="top-bar">
+
+    <img src="logo.png" alt="Morris Lam Architecture Logo">
+</div>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container">
+                <img src="minecraftLake.png" alt="Image 1">
+                <img src="medievalVillage.png" alt="Image 2">
+                <img src="medievalVillage2.png" alt="Image 3">
+                <img src="medievalHousing.png" alt="Image 4">
+                <img src="jpBridge.png" alt="Image 5">
+                <img src="jpVillage.png" alt="Image 6">
+                <img src="jpVillage2.png" alt="Image 7">
+                <img src="jpPagoda.png" alt="Image 8">
+            </div>
+            <div class="navigation">
+                <button class="prev-button" onclick="previousImage()">&#60;</button>
+                <span class="gallery-counter">1/3</span>
+                <button class="next-button" onclick="nextImage()">&#62;</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
